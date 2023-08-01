@@ -1,0 +1,97 @@
+/*external style*/
+.p
+{
+	border: 2px dashed red;
+	font-family: cursive;
+	background-color: cyan;
+}
+/*prior style*/
+.a
+{
+	color: pink;
+}
+/*class selector*/
+.c
+{
+	font-family: elephant;
+	font-size: 30px;
+}
+/*id selector*/
+#i
+{
+	font-family:Bradley Hand ITC;
+	font-size: 30px;
+}
+/*element selector*/
+h2
+{
+	font-family: Bradley Hand ITC;
+	font-size: 30px;
+}
+p
+{
+	font-family: cursive;
+	color: cyan;
+}
+/*grouping selector*/
+h1,h3
+{
+	border: dashed;
+	font-weight: bold;
+	font-family: cursive;
+	font-size: 30px;
+}
+/*attribute selector*/
+img[src]
+{
+	border: dashed;
+}
+input[type]
+{
+	font-family: algerian;
+	color: blue;
+}
+input[type="number"]
+{
+	color: red;
+}
+/*a[href]
+{
+	background-color:cyan;
+	font-weight: bold;
+	font-family: cursive;
+	font-size: 30px;
+}
+/*pseudo selector*/
+a:link
+{
+	color: blue;
+	font-size: 30px;
+}
+a:visited
+{
+	color: cyan;
+}
+img:hover
+{
+	border: dotted red;
+}
+a:active
+{
+	color: yellow;
+}
+span:active
+{
+	color: green;
+	font-size: 40PX;
+}
+/*background image*/
+div
+{
+	height: 180px;
+	width: 260px;
+	background-image: url('bg.jpg');
+	border: 5px solid green;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
