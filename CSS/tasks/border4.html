@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 <head>
 	<title>Task-4</title>
@@ -8,12 +8,12 @@
 			height: 100px;
 			width: 500px;
 			color:white;
-			background-color:rgb(250,92,5);
+			background-color:rgb(225,92,5);
 			border:150px solid transparent;
 			padding:25px;
 			text-align:center;
 			border-image-source:url('border.jpg');
-			border-image-repeat: stretch;
+			/*border-image-repeat: stretch;*/
 			border-image-slice: 50;
 		}
 	</style>
@@ -22,7 +22,35 @@
 	<div>
 		This is a div with a border image <br>
 		and three lines of text <br>
-		making it much bigger than the original image 
+		making it much bigger than the original image
 	</div>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>clipped border</title>
+	<style type="text/css">
+		.box
+		{
+			/*display:inline-block;*/
+		 	width:300px;
+			aspect-ratio:1.5;
+			background: linear-gradient(45deg,orange,red);
+}
+.mask {
+  -webkit-mask:
+    radial-gradient(circle 40px at top    left ,#0000 98%,#000) top    left,
+    radial-gradient(circle 40px at top    right,#0000 98%,#000) top    right,
+    radial-gradient(circle 40px at bottom left ,#0000 98%,#000) bottom left,
+    radial-gradient(circle 40px at bottom right,#0000 98%,#000) bottom right;
+  -webkit-mask-size:51% 51%;
+  -webkit-mask-repeat:no-repeat;
+}
+	</style>
+</head>
+<body>
+	<div class="box mask"></div>
 </body>
 </html>

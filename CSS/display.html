@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display</title>
+	<style type="text/css">
+		h2	
+		{
+			display: inline;/*changing default block to inline*/
+		}
+		tt
+		{
+			display:block;/*changing default inline to block*/
+		}
+		#w
+		{
+			height:200px;
+			width:200px;
+			border: 2px solid yellow;
+			float:left;
+		}
+		#x
+		{
+			height:200px;
+			width:200px;
+			border: 2px solid green;
+			float:left;
+			visibility: hidden;/*just hidden not removed*/
+		}
+		#y
+		{
+			height:200px;
+			width:200px;
+			border: 2px solid red;
+			float:left;
+		}
+		#z
+		{
+			height:200px;
+			width:200px;
+			border: 2px solid blue;
+			float:left;
+			display:none;/*removed from output*/
+		}
+	</style>
+</head>
+<body>
+	<h2>Drive Ready</h2>
+	<h2>(FSD)</h2>
+	<tt>Hello Everyone...!</tt>
+	<tt>FSD full formm is Full Stack Development</tt><br>
+	<div id="w"></div>
+	<div id="x"></div>
+	<div id="y"></div>
+	<div id="z"></div>
+</body>
+</html>

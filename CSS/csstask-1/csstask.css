@@ -1,0 +1,59 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+div
+{		
+	height:320px;
+	width:780px;
+	background-color: lightgrey;
+}
+.a
+{
+	height: 250px;
+	width: 200px;
+	background-color: white;
+	margin: 30px;
+	float:left;
+	border-radius: 20px;
+	text-align: center;
+}
+.b
+{
+	padding-top:30px;
+	color:blue;
+	font-size:50px;
+}
+h3
+{
+	padding-top: 0px;
+	font-size:20px;
+	color:black;
+	padding-bottom: 0px;
+	display:inline;
+}
+small
+{
+	padding-top: 0px;
+	color:lightgrey;
+}
+hr
+{
+	border:1px solid blue;
+	margin:8px;
+}
+.c
+{
+	background-color: blue;
+    border-radius: 50px;
+    text-align: center;
+    padding:6px 25px;
+    color:white;
+    border:1px solid blue;
+}
+.fa-github fa-brands
+{
+	padding-bottom: 0px;
+}
