@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>String_Methods</title>
+</head>
+<body>
+	<h1>A List of JavaScript "string methods"</h1>
+	<script type="text/javascript">
+		var name = "Dhana Sai";
+		var name1 =  "   Jyothi Sri ";
+		function strMeth(str)
+		{
+			document.write("<b>"+str+"</b><br>");
+		}
+		strMeth("<i>Original String : </i>"+name);
+		strMeth("<i>length : </i>"+name.length);
+		strMeth("<i>substr : </i>"+name.substr(2,6));
+		strMeth("<i>substring : </i>"+name.substring(2,8));
+		strMeth("<i>replace : </i>"+name.replace('a','w'));
+		strMeth("<i>replace all : </i>"+name.replaceAll('a','w'));
+		strMeth("<i>search : </i>"+name.search('Sai'));
+		strMeth("<i>tolowercase : </i>"+name.toLocaleLowerCase());
+		strMeth("<i>touppercase : </i>"+name.toLocaleUpperCase());
+		strMeth("<i>indexof : </i>"+name.indexOf('S'));
+		strMeth("<i>includes : </i>"+name.includes('Sai'));
+		strMeth("<i>slice : </i>"+name.slice(-8,-4));
+		strMeth("<i>concat : </i>"+name.concat(name1));
+		strMeth("<i>last index of : </i>"+name.lastIndexOf('a'));
+		strMeth("<i>char code at : </i>"+name.charCodeAt(1));
+		strMeth("<i>trim : </i>"+name1.trim());
+		strMeth("<i>char at : </i>"+name.charAt(3));
+		strMeth("<i>value of : </i>"+name.valueOf());
+		strMeth("<i>split : </i>"+name.split(" "));
+		strMeth("<i>to string : </i>"+name.toString());
+		strMeth("<i>match : </i>"+name.match('Sai'));
+		strMeth("<i>starts with : </i>"+name.startsWith('D'));
+		strMeth("<i>ends with : </i>"+name.endsWith('a'));
+	</script>
+</body>
+</html>

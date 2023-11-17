@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>for_each</title>
+</head>
+<body>
+	<h1>For_Each () ~  It calls a function for each element in an array</h1>
+	<script type="text/javascript">
+		let arr = [10,21,34,42,57,68]
+		document.write("Original array : "+arr+"<br>");
+		document.write("after for_each method : <br>");
+		let arr1 = arr.forEach(even_odd)
+		function even_odd(num)
+		{
+			if(num%2==0)
+			{
+				document.write(num+" - even<br>")
+			}
+			else
+			{
+				document.write(num+" - odd<br>")
+			}
+		}
+	</script>
+</body>
+</html>

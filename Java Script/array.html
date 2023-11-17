@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		// var info =
+		// {
+		// 	name:'Jyothi','rno':2127,'college':'AEC','branch':'CSE'
+		// }
+		// document.write(info.name," ",info.rno," ",info.college," ",info.branch);
+
+		var info = [
+			{'name':'sree','age':19,'id':2127},
+			{'name':'varshu','age':19,'id':1234},
+			{'name':'ranjitha','age':20,'id':5678},
+			{'name':'mouni','age':20,'id':1256},
+			{'name':'lasya','age':20,'id':2579}
+			];
+		console.log(info)
+		// document.write(info[0].name," ",info[0].age," ",info[0].id);
+		// document.write("<br>")
+		// document.write(info[1].name," ",info[1].age," ",info[1].id);
+		// document.write("<br>")
+		// document.write(info[2].name," ",info[2].age," ",info[2].id);
+		// document.write("<br>")
+		// document.write(info[3].name," ",info[3].age," ",info[3].id);
+		// document.write("<br>")
+		// document.write(info[4].name," ",info[4].age," ",info[4].id);
+		for(var i=0;i<info.length;i++)
+		{
+			document.write((i+1),". "+info[i].name+" ",info[i].age+" ",info[i].id,"<br>");
+		}
+	</script>
+</body>
+</html>

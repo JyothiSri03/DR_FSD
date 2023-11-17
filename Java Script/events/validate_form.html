@@ -1,0 +1,194 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form_Submit</title>
+</head>
+<body>
+	<form id="myForm" onsubmit="return validateForm()"  method="post">
+		First name:<input type="text" name="fname" id="fname_id"><br><br>
+		Last name:<input type="text" name="lname" id="lname_id"><br><br>
+		Email: <input type="email" name="email" id="e_id"><br><br>
+  		Password<input type="password" name="pswd" id="p_id"><br><br>
+  		Enter the DOB:<input type="date" id="d_id"><br><br>
+  		Branch:
+		<input type="radio" name="branch" value="CSE" id="branch_id">CSE&nbsp
+	 	<input type="radio" name="branch" value="ECE" id="branch_id">ECE&nbsp
+		<input type="radio" name="branch" value="AIML" id="branch_id">AIML&nbsp
+		<input type="radio" name="branch" value="MECH" id="branch_id">MECH&nbsp
+		<input type="radio" name="branch" value="EEE" id="branch_id">EEE&nbsp
+		<input type="radio" name="branch" value="CIVIL" id="branch_id">CIVIL&nbsp<br><br>
+		<select name="colleges" id="clg_id">
+			<option>--select college--</option>
+			<option>AEC</option>
+			<option>ACET</option>
+			<option>ACOE</option>
+		</select><br><br>
+		Languages:  <br>
+		<input type="checkbox" name="lan" value="English" id="lan_id">English<br>
+		<input type="checkbox" name="lan" value="Hindi" id="lan_id">Hindhi<br>
+		<input type="checkbox" name="lan" value="Telugu" id="lan_id">Telugu<br>
+		<input type="checkbox" name="lan" value="Tamil" id="lan_id">Tamil<br>
+		<input type="checkbox" name="lan" value="Malayalam" id="lan_id">Malayalam<br><br><br>
+		<input type="submit" value="submit">
+		<input type="reset" value="reset">
+	</form>
+	<script type="text/javascript">
+		function validateForm()
+		{
+			document.getElementById('fname_id').value;
+			document.getElementById('lname_id').value;
+			document.getElementById('clg_id').value;
+  			document.getElementById('e_id').value;
+  			document.getElementById('p_id').value;
+ 			document.getElementById('d_id').value;
+ 			document.querySelector('input[name="branch"]:checked');
+  			document.querySelectorAll('input[name="lan"]:checked');
+			if(fname=='')
+			{
+				alert("enter first name");
+				return false;
+			}
+			if(lname == '')
+			{
+    			alert("please enter last name");
+    			return false;
+			}
+			if(email == '')
+			{
+			    alert("please enter Email");
+			    return false;
+			}
+			if(pswd == '')
+			{
+			    alert("please enter password");
+			    return false;
+			}
+			if(birth == '')
+			{
+			    alert("please enter the Date of Birth:");
+			    return false;
+			}
+			if(clg == '')
+			{
+			    alert("please choose college");
+			    return false;
+			}
+			if(!branch)
+			{
+			    alert("please choose Branch");
+			    return false;
+			}
+			if(lan.length === 0)
+			{
+			    alert("please choose Language");
+			    return false;
+  			}
+		}
+		function submitform()
+		{
+			document.getElementById('myForm').submit();
+		}
+		function resetform()
+		{
+			document.getElementById('myForm').reset();
+		}
+	</script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form_Submit</title>
+</head>
+<body>
+	<form id="myForm" onsubmit="return validateForm()" method="post" align="center">
+		First name: <input type="text" name="fname" id="fname_id"><br><br>
+		Last name<input type="text" name="lname" id="lname_id"><br><br>
+		Email: <input type="email" name="email" id="e_id"><br><br>
+		Password<input type="password" name="pswd" id="p_id"><br><br>
+		Enter the DOB:<input type="date" id="d_id"><br><br>
+		<select name="colleges" id="clg_id">
+		  	<option value="">--select colleges ---</option>
+		  	<option value="AEC">AEC</option>
+		  	<option value="ACET">ACET</option>
+		  	<option value="ACOE">ACOE</option>
+		</select><br><br>
+		Languages:  <br>
+		<input type="checkbox" name="lan" value="English" id="lan_id">English<br>
+		<input type="checkbox" name="lan" value="Hindi" id="lan_id">Hindhi<br>
+		<input type="checkbox" name="lan" value="Telugu" id="lan_id">Telugu<br>
+		<input type="checkbox" name="lan" value="Tamil" id="lan_id">Tamil<br>
+		<input type="checkbox" name="lan" value="Malayalam" id="lan_id">Malayalam<br><br><br>
+		Branch:
+		<input type="radio" name="branch" value="CSE" id="branch_id">CSE&nbsp
+		<input type="radio" name="branch" value="ECE" id="branch_id">ECE&nbsp
+		<input type="radio" name="branch" value="AIML" id="branch_id">AIML&nbsp
+		<input type="radio" name="branch" value="MECH" id="branch_id">MECH&nbsp
+		<input type="radio" name="branch" value="EEE" id="branch_id">EEE&nbsp
+		<input type="radio" name="branch" value="CIVIL" id="branch_id">CIVIL&nbsp
+		<br><br>
+		<!-- Suggestions:<br>
+		<textarea rows="5" cols="50" name="sug" placeholder="Write your Suggestions if any...."></textarea><br><br>
+		Upload the file:<input type="file"><br><br> -->
+		<input type="submit" value="Submit"><br><br>
+	</form>
+	<script>
+	function validateForm()
+	{
+	  	let fname = document.getElementById('fname_id').value;
+	  	let lname = document.getElementById('lname_id').value;
+	  	let email = document.getElementById('e_id').value;
+	  	let pswd = document.getElementById('p_id').value;
+	  	let birth = document.getElementById('d_id').value;
+	  	let clg = document.getElementById('clg_id').value;
+	  	let branch = document.querySelector('input[name="branch"]:checked');
+	  	let lan = document.querySelectorAll('input[name="lan"]:checked');
+		if(fname == '')
+		{
+		    alert("please enter first name");
+		    return false;
+		}
+		if(lname == '')
+		{
+		    alert("please enter last name");
+		    return false;
+		}
+		if(email == '')
+		{
+		    alert("please enter Email");
+		    return false;
+		}
+		if(pswd == '')
+		{
+		    alert("please enter password");
+		    return false;
+		}
+		if(birth == '')
+		{
+		    alert("please enter the Date of Birth:");
+		    return false;
+		}
+		if(clg == '')
+		{
+		    alert("please choose college");
+		    return false;
+		}
+		if(!branch)
+		{
+		    alert("please choose Branch");
+		    return false;
+		}
+		if(lan.length === 0)
+		{
+		    alert("please choose Language");
+		    return false;
+		}
+	}
+	</script>
+</body>
+</html>

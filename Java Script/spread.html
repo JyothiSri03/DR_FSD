@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Spread</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let arr=[10,20,30,40];
+		document.write(arr+"<br>");//10,20,30,40
+		document.write(...arr);//10 20 30 40
+
+		let arr1=[50,60,70,...arr]
+		document.write("<br>"+arr1+"<br>");
+
+		let arr2 = [1,2,3,4];
+		let arr3 = [6,7,8,9];
+		let arr4 = [...arr2,5,...arr3,10]
+		console.log(arr4+"<br>")
+		document.write(arr4+"<br>")
+		document.write(...arr4)
+
+		let str = 'Dhanu';
+		console.log(str)
+		console.log(...str)
+		document.write("<br>"+str+"<br>")
+		document.write(...str+"<br>")
+
+		let arr5 = [10,20,30,40]
+		function sum(a,b,c,d)
+		{
+			document.write(a+b+c+d);
+		}
+		//sum(arr[0],arr[1],arr[2],arr[3])
+		sum(...arr5)
+	</script>
+</body>
+</html>

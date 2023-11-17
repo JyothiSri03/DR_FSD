@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .slider-container {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider-images {
+    width: 500%;
+    display: flex;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+</style>
+</head>
+<body>
+
+<div class="slider-container">
+  <div class="slider-images">
+    <div class="slider-image">
+      <img src="1.jpg" alt="Image 1">
+    </div>
+    <div class="slider-image">
+      <img src="2.jpeg" alt="Image 2">
+    </div>
+    <div class="slider-image">
+      <img src="3.png" alt="Image 3">
+    </div>
+    <div class="slider-image">
+      <img src="4.jpeg" alt="Image 1">
+    </div>
+    <div class="slider-image">
+      <img src="5.jpeg" alt="Image 1">
+    </div>
+  </div>
+</div>
+
+<script>
+  const sliderImages = document.querySelector('.slider-images');
+  const sliderImageWidth = document.querySelector('.slider-image').clientWidth;
+  let slideIndex = 0;
+
+  function slideNext() {
+    slideIndex = (slideIndex + 1) % sliderImages.children.length;
+    updateSliderPosition();
+  }
+
+  function updateSliderPosition() {
+    const offset = -slideIndex * sliderImageWidth;
+    sliderImages.style.transform = `translateX(${offset}px)`;
+  }
+
+  setInterval(slideNext, 2000); 
+</script>
+
+</body>
+</html>

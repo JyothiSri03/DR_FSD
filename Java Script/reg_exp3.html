@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>validation</title>
+</head>
+<body>
+	<script type="text/javascript">
+		re = /^[0-9]{10}/;//->valid upto 10 and exceed the range
+		op = re.test('12345678901')
+		document.write(op+"<br>")
+
+		re1 = /^[0-9]{10}$/;//->valid uptp 10 but cant exceed the range
+		op = re1.test('81215570601');
+		document.write(op+"<br>")
+
+		re2 = /^[9][0-9]{9}$/;//->valid uptp 10 and starts with a particular num
+		op = re2.test('9705563220');
+		document.write(op+"<br>")
+	</script>
+</body>
+</html>

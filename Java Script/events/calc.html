@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<style type="text/css">
+		td
+		{
+			text-align: center;
+			font-weight: bold;
+			border: 1px solid #efe1e1;
+		}
+		td:not(#result_id)
+		{
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body align="center">
+	<h2>Calculator</h2>
+	<table border=1 cellspacing=0 cellpadding=6 width="400" align="center" id="table_id">
+		<tr>
+			<td colspan="4" style="height:30px;text-align:right" id="result_id"></td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>8</td>
+			<td>7</td>
+			<td>/</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>5</td>
+			<td>4</td>
+			<td>*</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>2</td>
+			<td>1</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>C</td>
+			<td>=</td>
+			<td>+</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		var tds=document.querySelectorAll("#table_id td");
+		for (var i=0;i<tds.length;i++)
+		{
+			tds[i].addEventListener
+			("click",function()
+				{
+					var val =this.innerText
+					if(val=='=')
+					{
+						getres = document.getElementById('result_id').innerText;
+						document.getElementById('result_id').innerText = eval(getres)
+					}
+					else
+					{
+						if(val=='C')
+						{
+							document.getElementById('result_id').innerText ='';
+						}
+						else
+						{	
+						document.getElementById('result_id').innerText +=val;
+						}
+					}
+				}
+			);
+		}
+	</script>
+</body>
+</html>

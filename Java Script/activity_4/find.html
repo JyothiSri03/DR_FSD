@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>find</title>
+</head>
+<body>
+	<h1>Find () ~ It returns the value of the first element that passes a test</h1>
+	<script type="text/javascript">
+		let arr =[1,5,3,7,12,15]
+		document.write("Original array : "+arr+"<br>");
+		let arr1 =arr.find(even)
+		function even(ele)
+		{
+			return (ele%2==0);
+		}
+		document.write("after find(even) : "+arr1)
+	</script>
+</body>
+</html>

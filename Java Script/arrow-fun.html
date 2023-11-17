@@ -1,0 +1,44 @@
+<!-- Arrow Function
+1.no function keyword
+2.after function name keep =
+3.after paranthesis use => -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		// function mul (n1,n2)
+		// {
+		// 	document.write(n1*n2);
+		// }
+		// mul(10,20);
+
+		mul = (n1,n2) =>//2 arguments
+		{
+			document.write(n1*n2);
+		}
+		mul(20,20);
+
+		document.write("<br>");
+
+		rno = (num) => //1 argument
+		{
+			document.write(num);
+		}
+		rno(2127)
+
+		document.write("<br>");
+
+		test = _ => // test = () => //no arguments
+		{
+			document.write('hello world');
+		}
+		test();
+	</script>
+</body>
+</html>

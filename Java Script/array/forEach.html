@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>For_Each</title>
+</head>
+<body>
+	<h2>For Each</h2>
+	<p>this method </p>
+	<script type="text/javascript">
+		let fees =[20000,22000,24000]
+		console.log(fees)
+		fees.forEach(function(amount,i,arr)
+		{
+			var fine=amount/10;
+			arr[i]=amount+fine
+		})
+		console.log(fees)
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OnChange</title>
+</head>
+<body>
+	<center>
+		<select style="height:30px;width:300px" onchange="getClgName(this.value)">
+			<option>--select college--</option>
+			<option>AEC</option>
+			<option>ACET</option>
+			<option>ACOE</option>
+		</select>
+		<p id="p_id"></p>
+	</center>
+	<script type="text/javascript">
+		function getClgName(clg_name)
+		{
+			document.getElementById('p_id').innerText=clg_name;
+		}
+	</script>
+</body>
+</html>

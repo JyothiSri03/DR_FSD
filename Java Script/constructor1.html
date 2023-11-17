@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Car</title>
+</head>
+<body>
+	<script type="text/javascript">
+		class car
+		{
+			constructor(brand,color,cost)
+			{
+				this.brand=brand;
+				this.color=color;
+				this.cost=cost;
+			}
+		}
+		let c1 = new car('KIA ','white ',20000);
+		document.write(c1.brand,c1.color,c1.cost+"<br>");
+
+		let c2 = new car('BMW ','black ',50000);
+		document.write(c2.brand,c2.color,c2.cost+"<br>");
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Filter</title>
+</head>
+<body>
+	<h1>Filter () ~ It creates a new array for the elements that pass a test provided by a function</h1>
+	<script type="text/javascript">
+		let arr = [33,21,17,48,9,54];
+		document.write("Original array : "+arr+"<br>");
+		document.write("after filtering : ")
+		document.write("condition- (num>18)-eligible <br>")
+		let arr1 =arr.filter(age)
+		function age(num)
+		{
+			if(num>18)
+			{
+				document.write(num+" : eligible<br>");
+			}
+			else
+			{
+				document.write(num+" : not eligible<br>");
+			}
+		}
+	</script>
+</body>
+</html>

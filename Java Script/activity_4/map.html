@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Map</title>
+</head>
+<body>
+	<h1>Map () ~ It creates a new array from calling a function for every array element</h1>
+	<script type="text/javascript">
+		let arr = [1,2,3,4,5]
+		document.write("Original array : "+arr+"<br>");
+		var arr1 =arr.map(mul_div)
+		function mul_div(num)
+		{
+			let a = num*100;
+		 	return (a/2);
+		}
+		document.write("After mapping : "+arr1);
+	</script>
+</body>
+</html>

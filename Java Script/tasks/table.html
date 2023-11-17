@@ -1,0 +1,241 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Table</title>
+</head>
+<body>
+	<table border="">
+		<thead>
+			<tr>
+				<th>course name</th>
+				<th>course number</th>
+				<th>course fees</th>
+				<th>place</th>
+			</tr>
+		</thead>
+		<tbody id="abc">		
+		</tbody>
+	<script type="text/javascript">
+		let values=
+		[
+			{
+				name:'sree',
+				rno:'2127',
+				fee:'5000',
+				place:'vizag'
+			},
+			{
+				name'Dhanshika',
+				rno:'2022',
+				fee:'1000',
+				place:'kerala'
+			},
+			{
+				name:'jyo',
+				rno:'1207',
+				fee:'0000',
+				place:'dwrm'
+			},
+			{
+				name:'aadhya',
+				rno:'2003',
+				fee:'2000',
+				place:'vizag'
+			},
+		]
+		for(let i=0;i<=values.length-1;i++)
+		{
+			let tr=document.createElement('tr');
+			let td1=document.createElement('td');
+			let td2=document.createElement('td');
+			let td3=document.createElement('td');
+			let td4=document.createElement('td');
+			td1.innerText=values[i].name;
+			td2.innerText=values[i].rno;
+			td3.innerText=values[i].fee;
+			td4.innerText=values[i].place;
+			tr.append(td1)
+			tr.append(td2)
+			tr.append(td3)
+			tr.append(td4)			
+			document.getElementById('abc').append(tr)
+		}
+	</script>
+	</table>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Table</title>
+</head>
+<body>
+<table border="">
+	<thead>
+		<tr>
+			<th>Course Name</th>
+			<th>Course Number</th>
+			<th>Course Fees</th>
+			<th>Place</th>
+		</tr>
+	</thead>
+	<tbody id="tbodyid">
+		
+	</tbody>
+	<script type="text/javascript">
+		var main=[{
+			name:'HTML',
+			number:23423,
+			fees:235,
+			place:'dwp'
+
+		},
+		{
+			name:'CSS',
+			number:65687,
+			fees:567,
+			place:'dwp'
+		},
+		{
+			name:'Javascript',
+			number:67845,
+			fees:7656,
+			place:'dwp'
+		}]
+		
+		for(let i=0;i<=main.length-1;i++){
+			let tr=document.createElement('tr');
+			let td1=document.createElement('td');
+			let td2=document.createElement('td');
+			let td3=document.createElement('td');
+			let td4=document.createElement('td');
+			td1.innerText=main[i].name;
+			td2.innerText=main[i].number;
+			td3.innerText=main[i].fees;
+			td4.innerText=main[i].place;
+			tr.append(td1)
+			tr.append(td2)
+			tr.append(td3)
+			tr.append(td4)			
+			document.getElementById('tbodyid').append(tr)
+		}
+	</script>
+</table>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  	<style type="text/css">
+  		.a
+  		{
+  			float:right;
+  		}
+  		.h
+  		{
+  			font-size:35px;
+  		}
+  	</style>
+</head>
+<body>
+<div class="container"><br>
+	<span class="h">Product <b>Details</b></span>
+	<button class="btn-info mt-3 a" id="add-row-btn ">+ Add Row</button>
+		<table class="table" border="3" id="data-table" >
+			<thead align="center">
+				<tr>
+					<th>Product Id</th>
+					<th>Name</th>
+		            <th>Price</th>
+		            <th>Actions</th>
+	            </tr>
+            </thead>
+            <tbody  align="center">
+            	<tr>
+			        <td contenteditable="false">456789</td>
+			        <td contenteditable="false">Realme mobile</td>
+			        <td contenteditable="false">16000</td>
+			        <td>
+			        	<button class="edit-btn" onclick="editRow(this)" title="Edit" ><i class="fa-solid fa-pen" style="font-size:25px;color: #ffe605;"></i></button>
+			            <button class="delete-btn" onclick="deleteRow(this)" title="Delete"><i class="fa-solid fa-trash" style="font-size:25px;color: #ed5e5e;"></i></button>
+			        </td>
+        		</tr>
+        		<tr>
+			        <td contenteditable="false">123456</td>
+			        <td contenteditable="false">MI mobile</td>
+			        <td contenteditable="false">18000</td>
+			        <td>
+			        	<button  class="edit-btn" onclick="editRow(this)" title="Edit"><i class="fa-solid fa-pen" style="font-size:25px;color: #ffe605;"></i></button>
+			            <button  class="delete-btn" onclick="deleteRow(this)" title="Delete"><i class="fa-solid fa-trash" style="font-size:25px;color: #ed5e5e;"></i></button>
+			        </td>
+		        </tr>
+		        <tr>
+		          	<td contenteditable="false">365648</td>
+		         	<td contenteditable="false">Vivo mobile</td>
+		          	<td contenteditable="false">20000</td>
+		          	<td>
+		            	<button class="edit-btn" onclick="editRow(this)" title="Edit"><i class="fa-solid fa-pen" style="font-size:25px;color: #ffe605;"></i></button>
+		            	<button class="delete-btn" onclick="deleteRow(this)" title="Delete"><i class="fa-solid fa-trash" style="font-size:25px;color: #ed5e5e;"></i></button>
+		          	</td>
+		        </tr>
+		    </tbody>
+		</table>
+	</div>
+</body>
+<script type="text/javascript">
+	function addRow() {
+      const tableBody = document.querySelector('#data-table tbody');
+      const newRow = `
+        <tr>
+          <td contenteditable="false"></td>
+          <td contenteditable="false"></td>
+          <td contenteditable="false"></td>
+          <td>
+            <button  class="edit-btn" onclick="editRow(this)" title="Edit"><i class="fa-solid fa-pen" style="font-size:25px;color: #ffe605;"></i></button>
+            <button  class="delete-btn" onclick="deleteRow(this)" title="Delete"><i class="fa-solid fa-trash" style="font-size:25px;color: #ed5e5e;"></i></button>
+          </td>
+        </tr>
+      `;      
+      tableBody.insertAdjacentHTML('beforeend', newRow);
+  }
+      document.getElementById('add-row-btn').addEventListener('click', addRow);
+     function editRow(button) {
+            var row = button.parentNode.parentNode;
+            var cells = row.getElementsByTagName("td");
+            var pid = cells[0].innerText;
+            var name = cells[1].innerText;
+            var price = cells[2].innerText;
+
+            var product = parseInt(prompt("Enter new Product Id:",pid));
+            var pname = prompt("Enter new Name of product:", name);
+            var pprice = parseFloat(prompt("Enter new product price:", price));
+           
+
+            if (product !== null && pname !== null &&pprice !== null)  {
+                cells[0].innerText = product;
+                cells[1].innerText = pname;
+                cells[2].innerText = pprice;
+            }
+        }
+
+        function deleteRow(button) {
+            var row = button.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+        }
+
+    </script>
+
+</body>
+</html>

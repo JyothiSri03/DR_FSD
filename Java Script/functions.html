@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Functions</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function print()//no arguments
+		{
+			document.write('Hello World');
+		}
+		print();
+
+		document.write("<br>")
+
+		function f1(name)//1 argument
+		{
+			document.write(name);
+		}
+		f1('sri')
+
+		document.write("<br>")
+
+		var id=10;//using prompt
+		function f2(no)
+		{
+			document.write(no)
+		}
+		f2(id)
+
+		document.write("<br>")
+
+		function add(a,b)//2 parameters
+		{
+			document.write('sum is : ',a+b)
+		}
+		add(21,27)
+
+		document.write("<br>")
+
+		var op = function(num)//anonymous function -> no function name
+		{
+			return(num*50);
+		}
+		document.write(op(5));
+	</script>
+</body>
+</html>

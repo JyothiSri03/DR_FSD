@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Valid num</title>
+</head>
+<body>
+	<h2>Regular Expressions</h2>
+	<input type="text" id='inp_id'>
+	<button onclick='validnum()'>check number validity</button>
+	<button onclick='validchar()'>check character validity</button>
+	<h1 id='msg_id'></h1>
+	<script type="text/javascript">
+		function validnum()
+		{
+			re = /^[8][0-9]{9}$/;
+			let n = document.getElementById('inp_id').value;
+			op = re.test(n);
+			if(op == true)
+			{
+				document.getElementById('msg_id').innerText = 'correct';
+				document.getElementById('msg_id').style.color='green';
+			}
+			else
+			{
+				document.getElementById('msg_id').innerText = 'plese enter valid number';
+				document.getElementById('msg_id').style.color='red';
+			}
+		}
+
+		function validchar()
+		{
+			//re1 = /^[a-z]+$/; //->only small letters
+			//re1 = /^[A-Z]+$/;//->only big letters
+			//re1 = /^[a-zA-Z]+$/;//->both small and big letters
+			//re1 = /^[a-zA-Z0-9]+$/ // alpha numeric characters
+			re1 = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/; // gmail verification
+			let m =document.getElementById('inp_id').value;
+			op = re1.test(m)
+			if(op == true)
+			{
+				document.getElementById('msg_id').innerText = 'correct';
+				document.getElementById('msg_id').style.color='green';
+			}
+			else
+			{
+				document.getElementById('msg_id').innerText = 'plese enter valid character';
+				document.getElementById('msg_id').style.color='red';
+			}
+		}
+	</script>
+</body>
+</html>

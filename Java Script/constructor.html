@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Constructor</title>
+</head>
+<body>
+	<script type="text/javascript">
+		class person//a class cannot have more than 1 constructor
+		{
+			constructor(id)
+			{
+				this.id=id;
+			}
+		}
+		let p = new person(2127+"<br>");
+		document.write(p.id);
+
+		class person1
+		{
+			constructor(id,name)
+			{
+				this.id=id;
+				this.name=name;
+			}
+		}
+		let p1= new person1(2127," shree")
+		document.write(p1.id,p1.name+"<br>");
+		let p2=new person1(1234," Jyothi")
+		document.write(p2.id,p2.name+"<br>");
+
+		class student
+		{
+			constructor(id,fname,lname,age)
+			{
+				this.id=id;
+				this.firstname=fname;
+				this.lastname=lname;
+				this.age=age;
+			}
+		}
+		let s = new student(1234," jyothi "," shree ",19+"<br>");
+		document.write(s.id,s.firstname,s.lastname,s.age);
+
+		class student1
+		{
+			constructor(id,name)
+			{
+				this.id=id;
+				this.name=name;
+				this.getData = 
+				function()
+				{
+					return this.id+" "+this.name;
+				}
+			}
+		}
+		let s1 = new student1(5678," pavani");
+		document.write(s1.getData());
+	</script>
+</body>
+</html>

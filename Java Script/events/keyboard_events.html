@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Events</title>
+</head>
+<body>
+	<label>Enter Name</label>
+	<input type="text" onkeyup="sample(this.value)" id="ins_id"><br>
+	<span id="sp_id"></span>
+	<script type="text/javascript">
+    	function sample(str)
+    	{
+    		if(str=='')
+    		{
+    			document.getElementById('ins_id').style.border='1px solid red';
+    			document.getElementById('sp_id').innerText='Please enter Name';
+    			document.getElementById('sp_id').style.color='red';
+    		}
+    		else
+    		{
+    			document.getElementById('ins_id').style.border='1px solid black';
+    			document.getElementById('sp_id').innerText='';
+    		}
+    	}
+    </script>
+</body>
+</html>

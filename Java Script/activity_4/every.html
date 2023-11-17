@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>every</title>
+</head>
+<body>
+	<h1>Every () ~ It returns true if the function returns true for all elements</h1>
+	<script type="text/javascript">
+		let arr =['varshi','vamsi','venu','vinay']
+		document.write("Original array : "+arr+"<br>");
+		let arr1 = arr.every(startwith)
+		function startwith(ele)
+		{
+			return ele.startsWith('v')
+		}
+		document.write("after every()-startsWith('v') : "+arr1+"<br>")
+		let arr2 = arr.every(endwith)
+		function endwith(ele)
+		{
+			return ele.endsWith('u')
+		}
+		document.write("after every()-endsWith('u') : "+arr2)
+	</script>
+</body>
+</html>

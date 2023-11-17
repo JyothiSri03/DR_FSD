@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image_Show</title>
+</head>
+<body>
+	<center>
+		<div style="width:900px;height:300px;border:1px solid #000">
+			<div style="width:650px;height:300px;float:left;border:1px solid #000">
+				<img src="1.jpg" style="width:200px;height:300px;border-right:1px solid #000" onclick="getimage('1.jpg')">
+				<img src="2.jpeg" style="width:200px;height:300px;border-right:1px solid #000" onclick="getimage('2.jpeg')">
+				<img src="3.png" style="width:200px;height:300px;border-right:1px solid #000" onclick="getimage('3.png')">
+			</div>
+			<div style="width:220px;height:300px;float:right;border:1px solid #000" id="op_id"></div>
+		</div>
+	</center>
+	<script type="text/javascript">
+		function getimage(img_path)
+		{
+			document.getElementById('op_id').innerHTML="<img src='"+img_path+"' style='width:200px;height:300px;'>";
+		}
+	</script>
+</body>
+</html>

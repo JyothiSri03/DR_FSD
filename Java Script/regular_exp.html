@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RE</title>
+</head>
+<body>
+	<h1>Regular Expression</h1>
+	<script type="text/javascript">
+		let re = /dhana/;
+		let op = re.test('Dhana Sai Jyothi Sri');
+		if(op == true)
+		{
+			document.write('existing...!')
+		}
+		else
+		{
+			document.write("not existing...!")
+		}
+		document.write("<br>"+op+"<br>")
+
+		let re1 = /dhana/i; //i->insensitive
+		let op1 = re1.test('Dhana Sai Jyothi Sri');
+		if(op1 == true)
+		{
+			document.write('existing...!')
+		}
+		else
+		{
+			document.write("not existing...!")
+		}
+		document.write("<br>"+op1)
+
+		let re2 = /^s/;
+		let op2 = re2.test('jyothi sri');//false
+		document.write("<br>"+op2);
+		let re3 = /^j/;
+		let op3 = re3.test('jyothi sri');//true
+		document.write("<br>"+op3);
+	</script>
+</body>
+</html>

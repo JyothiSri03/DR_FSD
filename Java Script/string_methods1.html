@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Str_Methods</title>
+</head>
+<body>
+	<table border="1" cellspacing="0">
+		<tr>
+			<td>&nbsp;</td>
+			<td>d</td>
+			<td>r</td>
+			<td>i</td>
+			<td>v</td>
+			<td>e</td>
+			<td>&nbsp;</td>
+			<td>r</td>
+			<td>e</td>
+			<td>a</td>
+			<td>d</td>
+			<td>y</td>
+		</tr>
+		<tr>
+			<td>ind</td>
+			<td>0</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+			<td>11</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>-11</td>
+			<td>-10</td>
+			<td>-9</td>
+			<td>-8</td>
+			<td>-7</td>
+			<td>-6</td>
+			<td>-5</td>
+			<td>-4</td>
+			<td>-3</td>
+			<td>-2</td>
+			<td>-1</td>
+		</tr>
+	</table><br>
+	<script type="text/javascript">
+		let name ="Drive Ready";
+		let name1 ="  Full Stack Development  ";
+		let name2 ="WEB DEVELOPMENT";
+		let name3 = "fsd drive ready batch"
+		let name4="shr@ee"
+		function sm(str_name)
+		{
+			document.write(str_name+"<br>")
+		}
+		sm("Original String : "+name);
+		//length
+		sm("String length : "+name.length);
+		//at 6th position char is r
+		sm("String position : "+name[6]);
+		sm("String position : "+name[-1]);
+		//at particular position
+		sm("char at method : "+name.charAt(2));
+		//to know the index
+		sm("index of : "+name.indexOf('v'));
+		//to know the last index
+		sm("last index of : "+name.lastIndexOf('e'));
+		//to remove spaces before and after string
+		sm("removes space : "+name1.trim());
+		//lower case
+		sm("lower case : "+name2.toLowerCase());
+		//upper case
+		sm("upper case : "+name1.toUpperCase());
+		//concatenate
+		sm("concatenate : "+name.concat(name1,name2));
+		//includes
+		sm("includes : "+name3.includes('ready'));//true
+		sm("includes : "+name3.includes('aftn'));//false
+		//converting string to array
+		sm("string to array : "+name.split(''));
+		console.log(name.split(''));
+
+		sm("string to array : "+name4.split('@'));
+		console.log(name4.split('@'));
+		//starts with
+		sm("starts with : "+name.startsWith('D'));//true(Drive Ready)
+		sm("starts with : "+name.startsWith('d'));//false(Drive Ready)
+		//ends with
+		sm("ends with : "+name.endsWith('a'));//false(Drive Ready)
+		sm("ends with : "+name.endsWith('y'));//true(Drive Ready)
+		//slice
+		sm("slice : "+name.slice(0,4));//(0,4-1=3)index
+		sm("slice : "+name.slice(-2));//backwards
+		sm("slice : "+name.slice(-4,-2));//(-4,-2-1)
+		//substring(only allows +ve)
+		sm("substring : "+name.substring(1,4));
+		sm("substring : "+name.substring(4,1));//(4,1) = (1,4)
+		sm("substring : "+name.substring(-1));//entire string comes
+		//substr(n=start position,m=no.of characters)
+		sm("substr : "+name.substr(0,4));
+	</script>
+</body>
+</html>

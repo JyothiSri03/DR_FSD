@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dom_properties</title>
+</head>
+<body>
+	<h1 id="x1">Hello Everyone...!</h1>
+	<h1 class="x2">Hello Everyone...!</h1>
+	<h3>This is Shree</h3>
+	<h4>welcome to javascript</h4>
+	<h4>FSD</h4>
+	<h5>Drive Ready-2025</h5>
+	<script type="text/javascript">
+		let a=document.getElementById('x1');
+		a.style.color="red";
+
+		let b=document.getElementsByClassName('x2');
+		b[0].style.color="green";
+
+		let c=document.getElementsByTagName('h3');
+		c[0].style.color="blue";
+
+		let d=document.querySelector('h5');
+		d.style.color="pink";
+
+		let e=document.querySelectorAll('h4');
+		e[0].style.color="purple";
+		e[1].style.color="skyblue";
+	</script>
+</body>
+</html>

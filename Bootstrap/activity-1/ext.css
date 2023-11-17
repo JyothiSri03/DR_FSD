@@ -1,0 +1,39 @@
+.container{
+	margin-top:30px;
+	border: 1px solid blue;
+}
+img{
+	height: 100%;
+	width: 50%;
+}
+.txt{
+	color: grey;
+	margin-left:160px;
+	padding-inline-end:100px;
+	margin-top:0%;
+}
+#inp{
+	margin-top: 15px;
+}
+#h{
+	margin-top: 10px;
+	margin-left: 160px;
+	font-weight: bold;
+	font-size:20px;
+}
+button{
+	width: 100%;
+}
+span{
+	font-size:20px;
+}
+#a2{
+	margin-right: 10px;
+	color: white;
+}
+#a1{
+	color: white;
+}
+.a{
+	text-align: center;
+}

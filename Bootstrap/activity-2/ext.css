@@ -1,0 +1,71 @@
+.container
+{
+	margin-top:60px;
+}
+
+/*1st Row*/
+#sp11
+{
+	text-align:right;
+	position:relative;
+	right:15px;
+}
+#sp12
+{
+	text-align:right;
+	font-size:13px;
+	position:relative;
+	right:15px;
+}
+.f1
+{
+	text-align:left;
+	position:relative;
+	left:25px;
+	top:28px;
+	font-size:30px;
+}
+/*all h4 and span in div*/
+div > h4,span
+{
+	position:relative;
+	top:-15px;
+
+}
+/*2nd Row*/
+#sp21
+{
+	text-align:left;
+	position:relative;
+	left:15px;
+}
+#sp22
+{
+	text-align:left;
+	font-size:13px;
+	position:relative;
+	left:15px;
+}
+.f2
+{
+	text-align:right;
+	position:relative;
+	right:25px;
+	top:28px;
+	font-size:30px;
+}
+/*Cards*/
+.card
+{
+	margin:10px 0px;
+	border:1px solid white;
+}
+/*Progress Bars*/
+.progress
+{
+	height:8px;
+	width:85%;
+	position:relative;
+	bottom:5px;
+	left:15px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Maps_Table</title>
+</head>
+<table id="table_id" border="1" cellspacing="0"></table>
+<body>
+	<script type="text/javascript">
+		let trainee = 
+		[
+		{
+			name:'jyo',
+			rno:2127
+		},
+		{
+			name:'varshu',
+			rno:1234
+		}
+		]
+		// let arr = trainee.map(function(ele,i,a)
+		// {
+		// 	console.log((i+1)+". "+ele.name+" "+ele.rno)
+		// })
+		let tr=''
+		trainee.map(function(ele,i,a)
+		{
+			tr+= "<tr><td>"+(i+1)+"</td><td>"+ele.name+"</td><td>"+ele.rno+"</td></tr>"
+		})
+		console.log(tr)
+		document.getElementById('table_id').innerHTML = tr;
+	</script>
+</body>
+</html>

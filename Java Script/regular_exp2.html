@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RE-2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		re = /batch/g; //g -> multiple indexes
+		op = re.exec('fsd batch aftn batch');
+		document.write(op+" ");
+		document.write(op.index+"<br>");
+		op = re.exec('fsd batch aftn batch');
+		document.write(op+" ");
+		document.write(op.index+"<br>");
+	</script>
+</body>
+</html>
